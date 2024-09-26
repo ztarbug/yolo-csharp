@@ -33,6 +33,8 @@ namespace detection_gui
         public MainWindow()
         {
             InitializeComponent();
+            AnimationImage.Source = new BitmapImage(new Uri(@"pack://application:,,,/images/sample.jpg"));
+
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromMilliseconds(300);
             timer.Tick += timer_Tick;

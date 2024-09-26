@@ -16,10 +16,13 @@
 	
   <ItemGroup>
     <None Remove="14-32-01-955.jpg" />
-  </ItemGroup>
-
+    <None Remove="images\sample.jpg" />
+  </ItemGroup>	
+	
   <ItemGroup>
-    <Resource Include="14-32-01-955.jpg" />
+    <Resource Include="images\sample.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
